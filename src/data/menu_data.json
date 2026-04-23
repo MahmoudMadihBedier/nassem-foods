@@ -1,0 +1,406 @@
+[
+  {
+    "category": "Shawarma",
+    "icon": "https://d1bqobzsowu5wu.cloudfront.net/155080/6bbdc18c932a48d49a2290c5d7405995",
+    "items": [
+      {
+        "name": "8/",
+        "price": "16"
+      },
+      {
+        "name": "/ 18",
+        "price": "9"
+      },
+      {
+        "name": "Nasser's Chicken Shawarma",
+        "price": "10"
+      },
+      {
+        "name": "Samoon Chicken Shawarma",
+        "price": "12"
+      },
+      {
+        "name": "Arabic chicken platter 4 sandwiches",
+        "price": "84"
+      },
+      {
+        "name": "Arabic meat platter 4 sandwiches",
+        "price": "90"
+      },
+      {
+        "name": "Arabic mixed platter 4 sandwiches",
+        "price": "85"
+      },
+      {
+        "name": "1 kilo chicken shawarma",
+        "price": "130"
+      },
+      {
+        "name": "Half kilo chicken shawarma",
+        "price": "70"
+      },
+      {
+        "name": "Chicken shawarma plate",
+        "price": "37"
+      }
+    ],
+    "raw_text": "Shawarma\n8/ 16\n9 / 18\n10 Nasser's Chicken Shawarma\n12 Samoon Chicken Shawarma\n22\n24\n35\n37\n84 Arabic chicken platter 4 sandwiches\n90 Arabic meat platter 4 sandwiches\n85 Arabic mixed platter 4 sandwiches\n130 1 kilo chicken shawarma\n70 Half kilo chicken shawarma\n37 Chicken shawarma plate\n"
+  },
+  {
+    "category": "Meals",
+    "icon": "https://cdn.uniqode.com/155080/893ec3357b794df4a94cd85de1d34133",
+    "items": [
+      {
+        "name": "35",
+        "price": "35"
+      },
+      {
+        "name": "35",
+        "price": "35"
+      },
+      {
+        "name": "Italian oven 30",
+        "price": "30"
+      },
+      {
+        "name": "30",
+        "price": "25"
+      },
+      {
+        "name": "22 20",
+        "price": "20"
+      }
+    ],
+    "raw_text": "35 35\nFrench oven French bread\nbaked meal roll meal\n35 35\nOven-baked Fajita sandwich\nfajita meal meal\n30 Italian oven 30\nCrispy bun meal\nbaked meal\n25 30\nShawarma\nFalafel sandwich meal\nsandwich meal\n20 22 20\nZinger Burger Meat Burger Chicken Burger\n"
+  },
+  {
+    "category": "Sandwiches",
+    "icon": "https://d1bqobzsowu5wu.cloudfront.net/155080/7fe8e7eb25744979b3873a1024c83108",
+    "items": [
+      {
+        "name": "/ 17 6 / 12",
+        "price": "9"
+      },
+      {
+        "name": "/ 15 7 / 14",
+        "price": "8"
+      },
+      {
+        "name": "Meat tikka 20 6 /",
+        "price": "12"
+      },
+      {
+        "name": "10 / 17",
+        "price": "18"
+      },
+      {
+        "name": "8 / 16",
+        "price": "17"
+      },
+      {
+        "name": "8 / 15",
+        "price": "19"
+      },
+      {
+        "name": "Samoun potato 12 11 /",
+        "price": "18"
+      }
+    ],
+    "raw_text": "Sandwiches\nS / L S / L\n9 / 17 6 / 12\n8 / 15 7 / 14\nMeat tikka 20 6 / 12\n18 10 / 17\n17 8 / 16\n19 8 / 15\nSamoun potato 12 11 / 18\n"
+  },
+  {
+    "category": "Pizza",
+    "icon": "https://cdn.uniqode.com/155080/62e59615297f470f8777e19112f94a30",
+    "items": [
+      {
+        "name": "29",
+        "price": "29"
+      },
+      {
+        "name": "37",
+        "price": "37"
+      },
+      {
+        "name": "34",
+        "price": "34"
+      },
+      {
+        "name": "42",
+        "price": "42"
+      },
+      {
+        "name": "34",
+        "price": "34"
+      },
+      {
+        "name": "42",
+        "price": "42"
+      },
+      {
+        "name": "34",
+        "price": "40"
+      },
+      {
+        "name": "42",
+        "price": "48"
+      }
+    ],
+    "raw_text": "Pizza\nS S\n29 29\n37 37\nM M\nMargherita pizza Vegetable pizza\nS S\n34 34\n42 42\nM M\nMeat pizza Chicken pizza\nS S\n34 34\n42 42\nM M\nMortadella pizza\nPepperoni pizza\nS S\n40 34\n48 42\nM M\nFour Seasons Pizza Hot dog pizza\n"
+  },
+  {
+    "category": "Manaqish",
+    "icon": "https://cdn.uniqode.com/155080/bc475ffb49c14faaacb357b6b154576a",
+    "items": [
+      {
+        "name": "11 11",
+        "price": "8"
+      },
+      {
+        "name": "8 12",
+        "price": "15"
+      },
+      {
+        "name": "9 11",
+        "price": "10"
+      },
+      {
+        "name": "75",
+        "price": "35"
+      },
+      {
+        "name": "K",
+        "price": "1"
+      }
+    ],
+    "raw_text": "Manakish\n8 11 11\nZaatar Akawi cheese Meat\nAny additional 2 aed Any additional 2 aed Any additional 2 aed\n15 8 12\nVegetable Labneh Muhammara\nKashkaval\nAny additional 2 aed\nAny additional 2 aed\n10 9 11\nSpinach Kraft\nLabneh\nAny additional 2 aed Any additional 2 aed Any additional 2 aed\n35 75\n70\n5\nShamiat any Pcs\nVegetable or molasses pie\n1 K\n105\n1/2 K 1/2\n55\n1/4\n1/4 K\n30\n"
+  },
+  {
+    "category": "Broasted Offers",
+    "icon": "https://cdn.uniqode.com/155080/5ddafd7b1d384753bd9a076fc97f9f07",
+    "items": [
+      {
+        "name": "6 4",
+        "price": "8"
+      },
+      {
+        "name": "12 9",
+        "price": "16"
+      },
+      {
+        "name": "105 85",
+        "price": "140"
+      },
+      {
+        "name": "115 90",
+        "price": "150"
+      }
+    ],
+    "raw_text": "Broasted offers\n8 6 4\n16 12 9\nCrispy 8 pcs Crispy 6 pcs Crispy 4 pcs\nBroasted 16 pcs Broasted 12 pcs Broasted 9 pcs\nPepsi - Coleslaw - Tomato Pepsi - Coleslaw - Tomato Pepsi - Coleslaw - Tomato\nPickles - Bread Pickles - Bread Pickles - Bread\nPotatoes Potatoes Potatoes\n140 105 85\nnormal normal normal\n150 115 90\nSpicy Spicy Spicy\n"
+  },
+  {
+    "category": "Broasted",
+    "icon": "https://cdn.uniqode.com/155080/5ddafd7b1d384753bd9a076fc97f9f07",
+    "items": [
+      {
+        "name": "Broasted chicken",
+        "price": "55"
+      },
+      {
+        "name": "Spicy Broasted Chicken",
+        "price": "60"
+      },
+      {
+        "name": "Broasted meal",
+        "price": "33"
+      },
+      {
+        "name": "Spicy meal",
+        "price": "35"
+      },
+      {
+        "name": "pieces crispy 55 10",
+        "price": "10"
+      },
+      {
+        "name": "pieces Crispy Spicy 60 10",
+        "price": "10"
+      },
+      {
+        "name": "crispy meal",
+        "price": "33"
+      },
+      {
+        "name": "Crispy Spicy meal",
+        "price": "35"
+      },
+      {
+        "name": "wings meal",
+        "price": "33"
+      }
+    ],
+    "raw_text": "Broasted\nBroasted chicken 55\nSpicy Broasted Chicken 60\nBroasted meal 33\nSpicy meal 35\n10 pieces crispy 55 10\n10 pieces Crispy Spicy 60 10\ncrispy meal 33\nCrispy Spicy meal 35\nwings meal 33\npins meal\n33\n"
+  },
+  {
+    "category": "Mandi Meals",
+    "icon": "https://d3nvy39jvu7woe.cloudfront.net/static/images/restaurantmenu/dinner.png",
+    "items": [
+      {
+        "name": "33",
+        "price": "38"
+      },
+      {
+        "name": "Charcoal chicken",
+        "price": "49"
+      },
+      {
+        "name": "Charcoal chicken half",
+        "price": "29"
+      }
+    ],
+    "raw_text": "Mandi meals\n38 33\n49 Charcoal chicken\n29 Charcoal chicken half\n"
+  },
+  {
+    "category": "Grills",
+    "icon": "https://cdn.uniqode.com/155080/cd898f2b13a24ba2b211a8b141f04206",
+    "items": [
+      {
+        "name": "1",
+        "price": "1"
+      },
+      {
+        "name": "2",
+        "price": "2"
+      },
+      {
+        "name": "50 33 85 50 33",
+        "price": "85"
+      },
+      {
+        "name": "1",
+        "price": "1"
+      },
+      {
+        "name": "2",
+        "price": "2"
+      },
+      {
+        "name": "50 33 85 50 33",
+        "price": "85"
+      },
+      {
+        "name": "60 40",
+        "price": "110"
+      },
+      {
+        "name": "60 40",
+        "price": "110"
+      },
+      {
+        "name": "1",
+        "price": "1"
+      },
+      {
+        "name": "2",
+        "price": "2"
+      },
+      {
+        "name": "60 40 150 80 45",
+        "price": "110"
+      }
+    ],
+    "raw_text": "Grille\nChicken Grill plate Grilled wings plate\n1 1\n2 2\n85 50 33 85 50 33\nChicken Arayes plate\nChicken kebab plate\n1 1\n2 2\n85 50 33 85 50 33\nMeat Arayes plate\nMeat Kebab plate\n1\n1\n2\n2\n110 60 40\n110 60 40\nMixed grill Meat tikka\n1 1\n2 2\n110 60 40 150 80 45\n"
+  },
+  {
+    "category": "Family Meals",
+    "icon": "https://cdn.uniqode.com/155080/36c441f3a8254944b964f40ecd722d11",
+    "items": [
+      {
+        "name": "charcoal chicken 1",
+        "price": "1"
+      },
+      {
+        "name": "broasted chicken",
+        "price": "1"
+      },
+      {
+        "name": "1 charcoal chicken 1",
+        "price": "100"
+      },
+      {
+        "name": "charcoal chicken 1",
+        "price": "1"
+      },
+      {
+        "name": "kg mixed grill",
+        "price": "1"
+      },
+      {
+        "name": "charcoal chicken 1",
+        "price": "1"
+      }
+    ],
+    "raw_text": "Family Meals\n1 charcoal chicken 1\n1 broasted chicken\n1\n94\naed\nWith appetizers\nkilo of mixed grilled,\n100 1 charcoal chicken 1\naed\nWith appetizers\n1 charcoal chicken 1\n119\naed With appetizers\n1 kg mixed grill\n1 charcoal chicken 1\n149\naed With appetizers\n"
+  },
+  {
+    "category": "Juices",
+    "icon": "https://d1bqobzsowu5wu.cloudfront.net/155080/da45989d232d4053b685269b7a4e757c",
+    "items": [
+      {
+        "name": "Cocktail 13 Monesh 15 Avocado",
+        "price": "17"
+      },
+      {
+        "name": "Guava kiwi 13 Lemon 15 Crystal",
+        "price": "15"
+      },
+      {
+        "name": "15 Awar Qalb",
+        "price": "13"
+      },
+      {
+        "name": "15 Orange 15",
+        "price": "13"
+      },
+      {
+        "name": "30 17",
+        "price": "45"
+      }
+    ],
+    "raw_text": "Juices\nCocktail 13 Monesh 15 Avocado 17\nGuava kiwi 13 Lemon 15 Crystal 15\n15\n13 15 Awar Qalb\nMango Mint lemon\n13 15 Orange 15\nPomegranate Pineapple\n45 30 17\nAvocado bottle Large juice bottle Orange pineapple\n"
+  },
+  {
+    "category": "Appetizers",
+    "icon": "https://cdn.uniqode.com/155080/893ec3357b794df4a94cd85de1d34133",
+    "items": [
+      {
+        "name": "15 10",
+        "price": "7"
+      },
+      {
+        "name": "20 10",
+        "price": "15"
+      },
+      {
+        "name": "15 15",
+        "price": "8"
+      },
+      {
+        "name": "30 28",
+        "price": "25"
+      },
+      {
+        "name": "5 5",
+        "price": "3"
+      },
+      {
+        "name": "5 3",
+        "price": "3"
+      },
+      {
+        "name": "4 7",
+        "price": "2"
+      }
+    ],
+    "raw_text": "Appetizers\n7 15 10\nlentil soup can mutabal hummus\n15 20 10\nPotato Wiges batatan sharhat Potato plate\n8 15 15\nFlat kibbeh tabawla fattoush\n25 30 28\nMuzbat plate Hummus meat liver dish\n3 5 5\ncoleslaw box Hot sauce Garlic box\n3 5 3\nice cup tahini box Pickle jar\n2 4 7\nWater soft drink Ayran rob\n"
+  }
+]
