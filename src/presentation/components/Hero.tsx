@@ -1,47 +1,67 @@
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { ThreeHero } from './ThreeHero';
 
 export const Hero = () => {
+  const { scrollY } = useScroll();
+  const y1 = useTransform(scrollY, [0, 500], [0, -100]);
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-10">
       <ThreeHero />
-      <div className="relative z-10 text-center px-4">
+      <motion.div
+        style={{ y: y1, opacity }}
+        className="relative z-10 text-center px-6"
+      >
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-primary uppercase border border-primary/20 rounded-full bg-primary/5">
-            DUBAI'S FINEST MIDDLE EASTERN CUISINE
-          </span>
-          <h1 className="text-6xl md:text-8xl font-serif font-bold mb-6 text-white leading-tight">
-            Naseem Al-Zabadani <br />
-            <span className="text-primary italic">نسيم الزبداني</span>
+          <motion.span
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="inline-block px-4 py-1.5 mb-6 text-[10px] font-bold tracking-[0.3em] text-primary uppercase border border-primary/20 rounded-full bg-primary/5 backdrop-blur-sm"
+          >
+            Antigravity Dining Experience
+          </motion.span>
+          <h1 className="text-5xl md:text-8xl font-serif font-bold mb-6 text-white leading-[1.1] tracking-tight">
+            Naseem <br />
+            <span className="text-primary italic">Al-Zabadani</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 font-sans">
-            A symphony of flavors from the heart of Zabadani, served with contemporary elegance in the heart of Dubai.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="text-base md:text-xl text-white/50 max-w-lg mx-auto mb-10 font-sans font-light leading-relaxed"
+          >
+            Experience the weightless fusion of Zabadani heritage and Dubai's modern luxury.
+          </motion.p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xs mx-auto sm:max-w-none">
             <a
               href="#menu"
-              className="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-background font-bold rounded-full hover:scale-105 transition-transform w-full sm:w-auto"
+              className="px-10 py-4 bg-primary text-background font-bold rounded-full hover:shadow-[0_0_30px_rgba(233,195,73,0.3)] transition-all w-full sm:w-auto"
             >
-              Explore Menu
+              The Menu
             </a>
             <a
               href="#about"
-              className="px-8 py-4 border border-white/20 text-white font-bold rounded-full hover:bg-white/5 transition-all w-full sm:w-auto"
+              className="px-10 py-4 border border-white/10 text-white font-bold rounded-full hover:bg-white/5 transition-all w-full sm:w-auto backdrop-blur-sm"
             >
-              Our Story
+              Story
             </a>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30 animate-bounce">
-        <span className="text-[10px] uppercase tracking-widest font-bold text-white">Scroll Down</span>
-        <div className="w-px h-8 bg-white/50" />
-      </div>
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-20"
+      >
+        <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent" />
+      </motion.div>
     </section>
   );
 };

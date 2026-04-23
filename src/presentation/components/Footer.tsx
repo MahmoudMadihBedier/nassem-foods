@@ -1,45 +1,72 @@
-import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { Instagram, Facebook, Twitter, ArrowUpRight } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="bg-surface-container-lowest py-20 px-6">
+    <footer id="contact" className="bg-background py-32 px-6 relative overflow-hidden">
+      {/* Decorative Gradient */}
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 blur-[150px] rounded-full pointer-events-none" />
+
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-2">
-            <h2 className="text-primary text-3xl font-serif font-bold mb-6">نسيم الزبداني</h2>
-            <p className="text-white/40 max-w-sm mb-8 leading-relaxed">
-              Experience the true essence of Middle Eastern hospitality in the heart of Dubai. Join us for a journey of taste and tradition.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
+          <div className="lg:col-span-2">
+            <h2 className="text-primary text-4xl font-serif font-bold mb-8 italic tracking-tight">نسيم الزبداني</h2>
+            <p className="text-white/40 max-w-sm mb-10 text-lg font-light leading-relaxed">
+              Elevating Middle Eastern culinary traditions into a weightless, modern experience in the heart of Dubai.
             </p>
             <div className="flex gap-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="p-3 bg-white/5 rounded-full hover:bg-primary/20 hover:text-primary transition-all"><Instagram size={20} /></a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="p-3 bg-white/5 rounded-full hover:bg-primary/20 hover:text-primary transition-all"><Facebook size={20} /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter" className="p-3 bg-white/5 rounded-full hover:bg-primary/20 hover:text-primary transition-all"><Twitter size={20} /></a>
+              {[Instagram, Facebook, Twitter].map((Icon, i) => (
+                <a
+                  key={i}
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 bg-white/5 rounded-2xl hover:bg-primary/20 hover:text-primary transition-all duration-500 border border-white/5"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
             </div>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h4>
-            <ul className="space-y-4 text-white/40 text-sm">
-              <li><a href="#hero" className="hover:text-primary transition-colors text-white/40">Home</a></li>
-              <li><a href="#menu" className="hover:text-primary transition-colors text-white/40">Menu</a></li>
-              <li><a href="#about" className="hover:text-primary transition-colors text-white/40">Our Story</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors text-white/40">Contact</a></li>
+            <h4 className="text-white/20 font-bold mb-8 uppercase tracking-[0.4em] text-[10px]">Navigation</h4>
+            <ul className="space-y-5 text-white/50 text-sm font-medium">
+              {['Home', 'Menu', 'Story', 'Contact'].map(item => (
+                <li key={item}>
+                  <a href={`#${item.toLowerCase()}`} className="hover:text-primary transition-colors flex items-center gap-2 group">
+                    {item}
+                    <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-all -translate-y-1" />
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Contact</h4>
-            <ul className="space-y-4 text-white/40 text-sm">
-              <li>Dubai, United Arab Emirates</li>
-              <li>+971 00 000 0000</li>
-              <li>info@naseem-alzabadani.com</li>
+            <h4 className="text-white/20 font-bold mb-8 uppercase tracking-[0.4em] text-[10px]">Connection</h4>
+            <ul className="space-y-6 text-white/50 text-sm font-light">
+              <li>
+                <span className="block text-[10px] uppercase tracking-widest text-primary/40 mb-1">Dubai Address</span>
+                Dubai Marina, UAE
+              </li>
+              <li>
+                <span className="block text-[10px] uppercase tracking-widest text-primary/40 mb-1">Reservation</span>
+                +971 00 000 0000
+              </li>
+              <li>
+                <span className="block text-[10px] uppercase tracking-widest text-primary/40 mb-1">Inquiry</span>
+                concierge@naseem-alzabadani.com
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-white/20">
-          <p>&copy; 2024 Naseem Al-Zabadani. All Rights Reserved.</p>
-          <p>Designed for Excellence</p>
+        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] uppercase tracking-[0.3em] text-white/20 font-bold">
+          <p>&copy; 2024 Naseem Al-Zabadani. Designed for the Future.</p>
+          <div className="flex gap-8">
+             <a href="#" className="hover:text-white transition-colors">Privacy</a>
+             <a href="#" className="hover:text-white transition-colors">Terms</a>
+          </div>
         </div>
       </div>
     </footer>
