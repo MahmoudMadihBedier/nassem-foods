@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#0A0A0A',
-        surface: '#111111',
+        background: '#FFFFFF',
+        surface: '#F9F9F9',
         primary: {
           DEFAULT: '#FFB800',
           container: '#D97706',
@@ -18,11 +18,11 @@ export default {
           container: '#991B1B',
         },
         'surface-container': {
-          lowest: '#050505',
-          low: '#0D0D0D',
-          DEFAULT: '#141414',
-          high: '#1C1C1C',
-          highest: '#242424',
+          lowest: '#FFFFFF',
+          low: '#F5F5F5',
+          DEFAULT: '#EEEEEE',
+          high: '#E0E0E0',
+          highest: '#D6D6D6',
         }
       },
       fontFamily: {
