@@ -8,9 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      /* Fallback styles in case CSS doesn't load */
+      body {
+        font-family: 'Manrope', sans-serif;
+        background: #FFFFFF;
+        color: #18181B;
+        margin: 0;
+        padding: 0;
+      }
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 1.5rem;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading">Loading Naseem Al-Zabadani...</div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
