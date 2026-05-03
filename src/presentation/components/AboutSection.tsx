@@ -10,7 +10,7 @@ export const AboutSection = () => {
         <FadeIn direction="right" antigravity>
           <Tilt>
             <div className="relative group">
-              <div className="aspect-[4/5] bg-zinc-100 rounded-[2rem] overflow-hidden shadow-xl transition-transform duration-700 group-hover:scale-[1.02]">
+              <div className="aspect-[4/5] bg-zinc-100 rounded-[2rem] overflow-hidden shadow-xl transition-transform duration-700 group-hover:scale-[1.02] border-4 border-primary/20">
                 <img
                   src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1000"
                   alt="Restaurant Interior"
@@ -44,7 +44,7 @@ export const AboutSection = () => {
                 Every dish is a masterclass in balance—where tradition meets the antigravity of modern gastronomy.
               </p>
 
-              <div className="pt-12 grid grid-cols-2 gap-10 border-t border-zinc-100">
+              <div className="pt-12 grid grid-cols-2 gap-10 border-t border-primary/20">
                 <div className="group">
                   <span className="block text-primary text-4xl font-serif font-bold mb-2 group-hover:translate-y-[-5px] transition-all">Pure</span>
                   <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-zinc-400">Original Harvest</span>
