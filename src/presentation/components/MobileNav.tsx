@@ -14,10 +14,11 @@ export const MobileNav = () => {
 
   return (
     <>
-      <div className="fixed top-6 right-6 z-[100] md:hidden">
+      <div className="fixed top-6 right-6 z-[100] md:hidden flex items-center gap-4">
+        <img src="/logo.png" alt="Logo" className="h-10 w-auto brightness-110 drop-shadow-[0_0_15px_rgba(255,184,0,0.3)]" />
         <button
           onClick={() => setIsOpen(true)}
-          className="p-4 bg-primary text-background rounded-2xl shadow-[0_15px_30px_rgba(233,195,73,0.4)] flex items-center gap-2 font-bold text-xs uppercase tracking-widest"
+          className="p-4 bg-primary text-background rounded-2xl shadow-[0_15px_30px_rgba(255,184,0,0.4)] flex items-center gap-2 font-bold text-xs uppercase tracking-widest"
         >
           <MenuIcon size={18} />
           Menu
@@ -34,7 +35,10 @@ export const MobileNav = () => {
             className="fixed inset-0 z-[110] bg-background flex flex-col"
           >
             <div className="flex justify-between items-center p-8">
-              <span className="text-primary font-serif font-bold text-2xl">نسيم الزبداني</span>
+              <div className="flex items-center gap-3">
+                <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
+                <span className="text-primary font-serif font-bold text-2xl">نسيم الزبداني</span>
+              </div>
               <button
                 onClick={() => setIsOpen(false)}
                 className="p-3 bg-white/5 rounded-full text-white"

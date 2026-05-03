@@ -15,7 +15,8 @@ export const Navbar = () => {
       scrolled ? 'py-4 bg-background/80 backdrop-blur-xl border-b border-white/5' : 'py-6 bg-transparent'
     }`}>
       <div className="flex items-center justify-between px-6 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
+          <img src="/logo.png" alt="Naseem Al-Zabadani Logo" className="h-10 w-auto brightness-110" />
           <span className="text-primary text-xl font-serif font-bold tracking-tight">نسيم الزبداني</span>
         </div>
 
