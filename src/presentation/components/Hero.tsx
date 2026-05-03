@@ -22,7 +22,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="inline-block px-4 py-1.5 mb-6 text-[10px] font-bold tracking-[0.3em] text-primary uppercase border border-primary/20 rounded-full bg-primary/5"
+            className="inline-block px-4 py-1.5 mb-6 text-[10px] font-bold tracking-[0.3em] text-accent uppercase border border-accent/30 rounded-full bg-gradient-to-r from-primary/10 to-accent/10"
           >
             Antigravity Dining Experience
           </motion.span>
@@ -41,7 +41,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xs mx-auto sm:max-w-none">
             <a
               href="#menu"
-              className="px-10 py-4 bg-primary text-white font-bold rounded-full hover:shadow-lg transition-all w-full sm:w-auto"
+              className="px-10 py-4 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-full hover:shadow-lg transition-all w-full sm:w-auto hover:from-primary-600 hover:to-accent-dark"
             >
               The Menu
             </a>
