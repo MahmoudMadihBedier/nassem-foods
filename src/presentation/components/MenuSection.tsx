@@ -60,7 +60,7 @@ export const MenuSection = () => {
                   key={index}
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.05 }}
+                  transition={{ delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
                   viewport={{ once: true }}
                   className="group relative"
                 >

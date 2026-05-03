@@ -7,22 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#141312',
-        surface: '#141312',
+        background: '#0A0A0A',
+        surface: '#111111',
         primary: {
-          DEFAULT: '#e9c349',
-          container: '#c5a12a',
+          DEFAULT: '#FFB800',
+          container: '#D97706',
         },
         secondary: {
-          DEFAULT: '#ffb596',
-          container: '#76320f',
+          DEFAULT: '#E85C41',
+          container: '#991B1B',
         },
         'surface-container': {
-          lowest: '#0f0e0d',
-          low: '#1d1b1a',
-          DEFAULT: '#211f1e',
-          high: '#2b2a28',
-          highest: '#363433',
+          lowest: '#050505',
+          low: '#0D0D0D',
+          DEFAULT: '#141414',
+          high: '#1C1C1C',
+          highest: '#242424',
         }
       },
       fontFamily: {

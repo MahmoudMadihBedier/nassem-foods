@@ -18,7 +18,6 @@ const AntigravityParticles = () => {
   useFrame((state) => {
     ref.current.rotation.y = state.clock.getElapsedTime() * 0.04;
     ref.current.rotation.x = state.clock.getElapsedTime() * 0.02;
-    // Slight vertical sway
     ref.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.5) * 0.2;
   });
 
@@ -26,12 +25,12 @@ const AntigravityParticles = () => {
     <Points ref={ref} positions={points} stride={3}>
       <PointMaterial
         transparent
-        color="#e9c349"
+        color="#FFB800"
         size={0.04}
         sizeAttenuation={true}
         depthWrite={false}
         blending={THREE.AdditiveBlending}
-        opacity={0.6}
+        opacity={0.4}
       />
     </Points>
   );
@@ -50,14 +49,14 @@ const FloatingCore = () => {
     <Float speed={5} rotationIntensity={2.5} floatIntensity={3}>
       <Sphere ref={meshRef} args={[1, 100, 100]} scale={1.3}>
         <MeshDistortMaterial
-          color="#e9c349"
+          color="#E85C41"
           attach="material"
           distort={0.6}
           speed={2.5}
           roughness={0.1}
           metalness={1}
-          emissive="#e9c349"
-          emissiveIntensity={0.2}
+          emissive="#E85C41"
+          emissiveIntensity={0.3}
         />
       </Sphere>
     </Float>
@@ -66,11 +65,11 @@ const FloatingCore = () => {
 
 export const ThreeHero = () => {
   return (
-    <div className="absolute inset-0 z-0 pointer-events-none opacity-60">
+    <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
       <Canvas camera={{ position: [0, 0, 6], fov: 45 }} dpr={[1, 2]}>
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.2} penumbra={1} intensity={2.5} />
-        <pointLight position={[-10, -10, -10]} color="#ffb596" intensity={2} />
+        <pointLight position={[-10, -10, -10]} color="#FFB800" intensity={2} />
         <AntigravityParticles />
         <FloatingCore />
       </Canvas>

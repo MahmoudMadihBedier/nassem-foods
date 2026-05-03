@@ -3,13 +3,15 @@ import { Instagram, Facebook, Twitter, ArrowUpRight } from 'lucide-react';
 export const Footer = () => {
   return (
     <footer id="contact" className="bg-background py-32 px-6 relative overflow-hidden">
-      {/* Decorative Gradient */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
           <div className="lg:col-span-2">
-            <h2 className="text-primary text-4xl font-serif font-bold mb-8 italic tracking-tight">نسيم الزبداني</h2>
+            <div className="flex items-center gap-4 mb-8">
+              <img src="/logo.png" alt="Logo" className="h-16 w-auto brightness-110" />
+              <h2 className="text-primary text-4xl font-serif font-bold italic tracking-tight">نسيم الزبداني</h2>
+            </div>
             <p className="text-white/40 max-w-sm mb-10 text-lg font-light leading-relaxed">
               Elevating Middle Eastern culinary traditions into a weightless, modern experience in the heart of Dubai.
             </p>

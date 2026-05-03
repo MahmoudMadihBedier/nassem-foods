@@ -3,8 +3,7 @@ import { FadeIn } from './FadeIn';
 export const AboutSection = () => {
   return (
     <section id="about" className="py-32 px-6 bg-background relative overflow-hidden">
-      {/* Decorative Blur */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
         <FadeIn direction="right" antigravity>
@@ -17,8 +16,7 @@ export const AboutSection = () => {
                 loading="lazy"
               />
             </div>
-            {/* Antigravity Badge */}
-            <div className="absolute -bottom-10 -right-4 w-40 h-40 bg-primary rounded-[2.5rem] p-8 flex flex-col justify-center items-center text-background shadow-[0_20px_50px_rgba(233,195,73,0.4)] rotate-12">
+            <div className="absolute -bottom-10 -right-4 w-40 h-40 bg-gradient-to-br from-primary to-primary-container rounded-[2.5rem] p-8 flex flex-col justify-center items-center text-background shadow-[0_20px_50px_rgba(255,184,0,0.4)] rotate-12">
                <span className="text-sm font-bold uppercase tracking-widest mb-1 opacity-60">Est.</span>
                <span className="text-4xl font-serif font-bold italic">1985</span>
             </div>
@@ -42,11 +40,11 @@ export const AboutSection = () => {
 
               <div className="pt-12 grid grid-cols-2 gap-10 border-t border-white/5">
                 <div className="group">
-                  <span className="block text-primary text-4xl font-serif font-bold mb-2 group-hover:translate-y-[-5px] transition-transform">Pure</span>
+                  <span className="block text-primary text-4xl font-serif font-bold mb-2 group-hover:translate-y-[-5px] transition-transform transition-all">Pure</span>
                   <span className="text-[10px] uppercase tracking-[0.2em] font-bold">Original Harvest</span>
                 </div>
                 <div className="group">
-                  <span className="block text-primary text-4xl font-serif font-bold mb-2 group-hover:translate-y-[-5px] transition-transform">Boundless</span>
+                  <span className="block text-secondary text-4xl font-serif font-bold mb-2 group-hover:translate-y-[-5px] transition-transform transition-all">Boundless</span>
                   <span className="text-[10px] uppercase tracking-[0.2em] font-bold">Culinary Spirit</span>
                 </div>
               </div>
