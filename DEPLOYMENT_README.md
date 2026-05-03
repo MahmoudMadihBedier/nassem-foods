@@ -6,16 +6,24 @@ The styles not appearing on Vercel was caused by missing build configuration. He
 
 ### ✅ Changes Made
 
-1. **Updated `vercel.json`** - Added proper build configuration:
+1. **Updated `vercel.json`** - Added proper Vercel configuration for pnpm:
    ```json
    {
-     "buildCommand": "npm run build",
+     "buildCommand": "pnpm build",
      "outputDirectory": "dist",
-     "installCommand": "npm install",
-     "framework": "vite",
+     "installCommand": "pnpm install --frozen-lockfile",
+     "devCommand": "pnpm dev",
+     "framework": null,
      "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
    }
    ```
+
+2. **Added `packageManager` field** to `package.json`:
+   ```json
+   "packageManager": "pnpm@10.0.0"
+   ```
+
+3. **Added `.nvmrc`** - Specifies Node.js version 20 for consistent deployment
 
 2. **Enhanced `vite.config.ts`** - Added proper base path and chunking:
    ```typescript
@@ -44,19 +52,14 @@ The styles not appearing on Vercel was caused by missing build configuration. He
 
 ### 🚀 Deployment Steps
 
-1. **Install Vercel CLI** (if not already installed):
+1. **Deploy to Vercel**:
    ```bash
-   npm install -g vercel
-   ```
-
-2. **Deploy to Vercel**:
-   ```bash
-   npm run vercel-deploy
+   pnpm run vercel-deploy
    ```
 
    Or manually:
    ```bash
-   npm run build
+   pnpm build
    vercel --prod
    ```
 
@@ -67,12 +70,12 @@ The styles not appearing on Vercel was caused by missing build configuration. He
 
 ### 🔧 Troubleshooting
 
-If styles still don't appear:
+If deployment still fails:
 
-1. **Check Build Output**: Run `npm run build` locally and verify `dist/` folder contains CSS files
-2. **Clear Cache**: In Vercel dashboard, redeploy with cache cleared
-3. **Check Console**: Open browser dev tools and check for CSS loading errors
-4. **Verify Paths**: Ensure all asset paths use relative paths (`./assets/...`)
+1. **Check Build Locally**: Run `pnpm build` to ensure it works
+2. **Clear Vercel Cache**: In Vercel dashboard, redeploy with cache cleared
+3. **Check Logs**: Look at the deployment logs for specific errors
+4. **Node Version**: Vercel should use Node 20 (specified in .nvmrc)
 
 ### 📁 Project Structure
 
@@ -86,4 +89,11 @@ dist/
 └── logo.png               # ✅ Static assets
 ```
 
-The build now properly generates chunked CSS and JS files that Vercel can serve correctly.
+### 🛠️ Key Fixes for pnpm on Vercel
+
+- **Framework**: Set to `null` to prevent auto-detection conflicts
+- **Install Command**: `pnpm install --frozen-lockfile` for exact dependency versions
+- **Build Command**: `pnpm build` instead of `npm run build`
+- **Package Manager**: Explicitly specified in package.json
+
+The deployment should now work correctly with pnpm!
