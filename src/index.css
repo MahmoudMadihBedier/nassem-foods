@@ -4,10 +4,10 @@
 
 @layer base {
   body {
-    @apply bg-background text-white font-sans;
+    @apply bg-background text-zinc-900 font-sans;
   }
   h1, h2, h3, h4 {
-    @apply font-serif;
+    @apply font-serif text-zinc-900;
   }
 }
 
