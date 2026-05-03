@@ -29,8 +29,8 @@ const AntigravityParticles = () => {
         size={0.04}
         sizeAttenuation={true}
         depthWrite={false}
-        blending={THREE.AdditiveBlending}
-        opacity={0.4}
+        blending={THREE.NormalBlending}
+        opacity={0.2}
       />
     </Points>
   );
@@ -49,14 +49,14 @@ const FloatingCore = () => {
     <Float speed={5} rotationIntensity={2.5} floatIntensity={3}>
       <Sphere ref={meshRef} args={[1, 100, 100]} scale={1.3}>
         <MeshDistortMaterial
-          color="#E85C41"
+          color="#FFB800"
           attach="material"
           distort={0.6}
           speed={2.5}
-          roughness={0.1}
-          metalness={1}
-          emissive="#E85C41"
-          emissiveIntensity={0.3}
+          roughness={0.2}
+          metalness={0.5}
+          emissive="#FFB800"
+          emissiveIntensity={0.1}
         />
       </Sphere>
     </Float>
@@ -65,11 +65,11 @@ const FloatingCore = () => {
 
 export const ThreeHero = () => {
   return (
-    <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
+    <div className="absolute inset-0 z-0 pointer-events-none opacity-20">
       <Canvas camera={{ position: [0, 0, 6], fov: 45 }} dpr={[1, 2]}>
-        <ambientLight intensity={0.5} />
-        <spotLight position={[10, 10, 10]} angle={0.2} penumbra={1} intensity={2.5} />
-        <pointLight position={[-10, -10, -10]} color="#FFB800" intensity={2} />
+        <ambientLight intensity={0.8} />
+        <spotLight position={[10, 10, 10]} angle={0.2} penumbra={1} intensity={2} />
+        <pointLight position={[-10, -10, -10]} color="#FFB800" intensity={1} />
         <AntigravityParticles />
         <FloatingCore />
       </Canvas>
