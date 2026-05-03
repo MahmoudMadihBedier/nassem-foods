@@ -9,7 +9,7 @@ import { FloatingElement } from './presentation/components/FloatingElement';
 
 function App() {
   return (
-    <div className="min-h-screen bg-background selection:bg-primary selection:text-white text-zinc-900 overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-white via-primary/2 to-white selection:bg-primary selection:text-white text-zinc-900 overflow-x-hidden">
       <Navbar />
       <MobileNav />
       <FloatingActionBar />

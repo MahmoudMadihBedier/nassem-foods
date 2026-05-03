@@ -2,14 +2,16 @@ import { Instagram, Facebook, Twitter, ArrowUpRight } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="bg-white py-32 px-6 relative overflow-hidden border-t border-zinc-100">
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 blur-[150px] rounded-full pointer-events-none" />
+    <footer id="contact" className="bg-white py-32 px-6 relative overflow-hidden border-t-4 border-primary">
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-4 mb-8">
-              <img src="/logo.png" alt="Logo" className="h-16 w-auto" />
+            <div className="flex items-center gap-4 mb-8 pb-8 border-b-2 border-primary/10">
+              <div className="p-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl drop-shadow-enhanced">
+                <img src="/logo.png" alt="Logo" className="h-32 w-auto" />
+              </div>
               <h2 className="text-primary text-4xl font-serif font-bold italic tracking-tight">نسيم الزبداني</h2>
             </div>
             <p className="text-zinc-400 max-w-sm mb-10 text-lg font-light leading-relaxed">
@@ -22,7 +24,7 @@ export const Footer = () => {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-zinc-50 rounded-2xl hover:bg-primary/10 hover:text-primary transition-all duration-500 border border-zinc-100"
+                  className="p-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl hover:bg-gradient-to-br hover:from-primary/20 hover:to-accent/20 hover:text-primary transition-all duration-500 border border-primary/20 text-primary"
                 >
                   <Icon size={20} />
                 </a>
