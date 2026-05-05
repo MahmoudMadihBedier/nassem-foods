@@ -2,11 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure Tailwind is loaded */
 @layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Manrope', sans-serif;
+  }
+
   body {
     @apply bg-background text-zinc-900 font-sans;
-    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+    min-height: 100vh;
   }
+
   h1, h2, h3, h4 {
     @apply font-serif text-zinc-900;
   }
@@ -19,5 +31,9 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .drop-shadow-enhanced {
+    filter: drop-shadow(0 4px 6px rgba(244, 166, 35, 0.15)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
   }
 }
