@@ -24,12 +24,6 @@
   }
 }
 
-@layer components {
-  img[src*="logo"] {
-    @apply transition-transform duration-300 hover:scale-105;
-  }
-}
-
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;

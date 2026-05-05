@@ -14,10 +14,10 @@ export const FloatingActionBar = () => {
   }, []);
 
   const navItems = [
-    { icon: Home, label: 'Home', href: '#hero' },
-    { icon: History, label: 'Story', href: '#about' },
-    { icon: Utensils, label: 'Menu', href: '#menu' },
-    { icon: Phone, label: 'Call', href: 'tel:+9710000000' },
+    { icon: Home, label: 'الرئيسية', href: '#hero' },
+    { icon: History, label: 'تراثنا', href: '#about' },
+    { icon: Utensils, label: 'القائمة', href: '#menu' },
+    { icon: Phone, label: 'اتصل', href: 'tel:+9710000000' },
   ];
 
   return (
@@ -29,21 +29,21 @@ export const FloatingActionBar = () => {
           exit={{ y: 100, opacity: 0, scale: 0.8 }}
           className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] md:hidden"
         >
-          <div className="flex items-center gap-1 p-2 bg-white/70 backdrop-blur-2xl border-2 border-primary/20 rounded-[2rem] shadow-xl">
+          <div className="flex items-center gap-1 p-2 bg-white/60 backdrop-blur-2xl border border-zinc-100 rounded-[2rem] shadow-xl">
             {navItems.map((item, i) => (
               <a
                 key={i}
                 href={item.href}
-                className="flex flex-col items-center justify-center w-14 h-14 rounded-[1.5rem] text-zinc-400 hover:text-primary hover:bg-primary/10 transition-all"
+                className="flex flex-col items-center justify-center w-14 h-14 rounded-[1.5rem] text-zinc-400 hover:text-primary hover:bg-zinc-50 transition-all"
                 aria-label={item.label}
               >
                 <item.icon size={20} />
-                <span className="text-[8px] uppercase tracking-tighter mt-1 font-bold">{item.label}</span>
+                <span className="text-[10px] mt-1 font-bold">{item.label}</span>
               </a>
             ))}
-            <div className="w-[1px] h-8 bg-primary/20 mx-2" />
+            <div className="w-[1px] h-8 bg-zinc-100 mx-2" />
             <button
-              className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-accent text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all"
+              className="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center shadow-lg"
               aria-label="Chat"
             >
               <MessageSquare size={20} />
