@@ -22,14 +22,19 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="inline-block px-4 py-1.5 mb-6 text-[12px] font-bold tracking-[0.1em] text-primary uppercase border border-primary/20 rounded-full bg-primary/5"
+            className="inline-block px-4 py-1.5 mb-10 text-[12px] font-bold tracking-[0.1em] text-primary uppercase border border-primary/20 rounded-full bg-primary/5"
           >
             تجربة طعام خارج حدود الجاذبية
           </motion.span>
-          <h1 className="text-6xl md:text-9xl font-serif font-bold mb-6 text-zinc-900 leading-[1.1] tracking-tight">
-            نسيم <br />
-            <span className="text-primary italic font-serif">الزبداني</span>
-          </h1>
+
+          <div className="flex justify-center mb-10">
+            <img
+              src="/logo.png"
+              alt="شعار نسيم الزبداني"
+              className="h-48 md:h-72 w-auto object-contain drop-shadow-[0_20px_50px_rgba(255,184,0,0.2)]"
+            />
+          </div>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
