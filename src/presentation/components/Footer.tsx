@@ -10,7 +10,6 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-4 mb-8">
               <img src="/logo.png" alt="شعار" className="h-16 w-auto" />
-              <h2 className="text-primary text-4xl font-serif font-bold italic tracking-tight">نسيم الزبداني</h2>
             </div>
             <p className="text-zinc-400 max-w-sm mb-10 text-xl font-light leading-relaxed">
               نرتقي بتقاليد الطهي في الشرق الأوسط لتصبح تجربة عصرية متحررة من الجاذبية في قلب دبي.
