@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ThreeHero } from './ThreeHero';
+import { ThreeLogo } from './ThreeLogo';
 
 export const Hero = () => {
   const { scrollY } = useScroll();
@@ -11,7 +12,7 @@ export const Hero = () => {
       <ThreeHero />
       <motion.div
         style={{ y: y1, opacity }}
-        className="relative z-10 text-center px-6"
+        className="relative z-10 text-center px-6 w-full"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -22,17 +23,13 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="inline-block px-4 py-1.5 mb-10 text-[12px] font-bold tracking-[0.1em] text-primary uppercase border border-primary/20 rounded-full bg-primary/5"
+            className="inline-block px-4 py-1.5 mb-2 text-[12px] font-bold tracking-[0.1em] text-primary uppercase border border-primary/20 rounded-full bg-primary/5"
           >
             تجربة طعام خارج حدود الجاذبية
           </motion.span>
 
-          <div className="flex justify-center mb-10">
-            <img
-              src="/logo.png"
-              alt="شعار نسيم الزبداني"
-              className="h-48 md:h-72 w-auto object-contain drop-shadow-[0_20px_50px_rgba(255,184,0,0.2)]"
-            />
+          <div className="flex justify-center -mt-4 -mb-8">
+            <ThreeLogo />
           </div>
 
           <motion.p
