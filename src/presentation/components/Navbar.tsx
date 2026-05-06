@@ -16,8 +16,7 @@ export const Navbar = () => {
     }`}>
       <div className="flex items-center justify-between px-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-4">
-          <img src="/logo.png" alt="شعار نسيم الزبداني" className="h-10 w-auto" />
-          <span className="text-zinc-900 text-xl font-serif font-bold tracking-tight">نسيم الزبداني</span>
+          <img src="/logo.png" alt="نسيم الزبداني" className="h-12 w-auto" />
         </div>
 
         <div className="flex items-center gap-8 text-[13px] font-bold uppercase tracking-[0.05em] text-zinc-500">

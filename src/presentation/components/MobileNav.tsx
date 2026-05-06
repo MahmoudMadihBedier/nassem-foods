@@ -15,7 +15,7 @@ export const MobileNav = () => {
   return (
     <>
       <div className="fixed top-6 left-6 z-[100] md:hidden flex items-center gap-4">
-        <img src="/logo.png" alt="Logo" className="h-10 w-auto shadow-sm" />
+        <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
         <button
           onClick={() => setIsOpen(true)}
           className="p-4 bg-primary text-white rounded-2xl shadow-lg flex items-center gap-2 font-bold text-sm uppercase tracking-widest"
@@ -36,8 +36,7 @@ export const MobileNav = () => {
           >
             <div className="flex justify-between items-center p-8">
               <div className="flex items-center gap-3">
-                <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
-                <span className="text-zinc-900 font-serif font-bold text-2xl">نسيم الزبداني</span>
+                <img src="/logo.png" alt="Logo" className="h-16 w-auto" />
               </div>
               <button
                 onClick={() => setIsOpen(false)}
